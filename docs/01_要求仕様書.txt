@@ -1,0 +1,25 @@
+AIなぞかけ生成アプリ 要求仕様書
+
+1. 概要
+ユーザーが入力した「お題A」に対して、OpenAI APIを用いて「AとかけてBととく。その心はCです。」という形式の日本語なぞかけを生成する。語群抽出ステップ（P, Q, R）を経てBとCを決定。生成結果はSupabaseに保存。
+
+2. 開発・運用環境
+- バージョン管理: GitHub
+- デプロイ: Vercel
+- バックエンド: Next.js API Routes
+- 外部API: OpenAI GPT API
+- データベース: Supabase（PostgreSQL）
+- フロントエンド: React + Tailwind CSS
+- スプレッドシート連携: Google Sheets API
+
+3. 機能要件
+- ユーザー入力（お題A、プリセット選択）
+- なぞかけ生成（語群抽出、プロンプト構造、OpenAI API連携）
+- 結果表示（なぞかけ文、語群構造の展開表示）
+- ログ保存（Supabaseに詳細情報を保存）
+
+4. 非機能要件
+- 再現性、拡張性、透明性、教育性
+
+5. 今後の開発方針
+- Copilot活用、Google Sheets API導入、Supabaseログ分析・可視化

@@ -1,0 +1,21 @@
+Supabase テーブル設計書
+
+テーブル名: nazo_log
+
+| カラム名           | 型      | 説明                                      |
+|--------------------|---------|-------------------------------------------|
+| admin_id           | integer | システムが割り当てる番号（初期値1）       |
+| timestamp          | text    | OpenAI返信時刻（日時）                    |
+| user_A             | text    | ユーザー入力のお題A                       |
+| presetNO           | text    | 使用したプリセット番号                    |
+| nazo_sentence      | text    | なぞかけ文（AとかけてBととく。そのこころはC）|
+| P_1                | text    | ベストなセットのP                         |
+| Q_1                | text    | ベストなセットのQ                         |
+| R_1                | text    | ベストなセットのR（Cに該当）              |
+| P_2                | text    | 候補セット2のP                            |
+| Q_2                | text    | 候補セット2のQ                            |
+| R_2                | text    | 候補セット2のR                            |
+| P_3                | text    | 候補セット3のP                            |
+| Q_3                | text    | 候補セット3のQ                            |
+| R_3                | text    | 候補セット3のR                            |
+| response_time_sec  | integer | OpenAI応答までにかかった時間（秒）        |
